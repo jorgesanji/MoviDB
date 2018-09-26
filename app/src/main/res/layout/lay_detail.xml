@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/movieIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/detail_image_size"
+                android:background="@color/colorAccent"
+                app:layout_constraintBottom_toTopOf="@+id/movieTitleTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/movieTitleTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/movieDescritionTv"
+                android:layout_marginTop="@dimen/margin_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginRight="@dimen/margin_mediun"
+                android:layout_marginLeft="@dimen/margin_mediun"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/movieIv" />
+
+            <TextView
+                android:id="@+id/movieDescritionTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginRight="@dimen/margin_mediun"
+                android:layout_marginLeft="@dimen/margin_mediun"
+                app:layout_constraintTop_toBottomOf="@+id/movieTitleTv" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</merge>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MoviesDB</string>
+    <string name="title_home">Movies</string>
+    <string name="sort_title">Filter</string>
+    <string name="sort_lastest_movies">Lastest movies</string>
+    <string name="sort_oldest_movies">Oldest movies</string>
+    <string name="sort_from_movies">Movies from</string>
+    <string name="sort_clear_filters">Clear filters</string>
+    <string name="error_internet_connection">An internet connection error has occurred please try again later</string>
+</resources>

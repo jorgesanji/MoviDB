@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_register"
+        android:title="@string/sort_title"
+        android:visible="true"
+        app:showAsAction="always" >
+        <menu>
+            <item android:id="@+id/action_sort_lastest"
+                app:showAsAction="ifRoom"
+                android:title="@string/sort_lastest_movies" />
+
+            <item android:id="@+id/action_sort_oldest"
+                app:showAsAction="ifRoom"
+                android:title="@string/sort_oldest_movies" />
+
+            <item android:id="@+id/action_sort_from"
+                app:showAsAction="ifRoom"
+                android:title="@string/sort_from_movies" />
+
+            <item android:id="@+id/action_sort_clear"
+                app:showAsAction="ifRoom"
+                android:title="@string/sort_clear_filters" />
+        </menu>
+    </item>
+</menu>
